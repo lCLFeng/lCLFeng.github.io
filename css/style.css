@@ -121,7 +121,7 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   background: #fff;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -148,7 +148,7 @@ h3 {
 }
 h1 {
   font-size: 1.6rem;
-  font-family: "Segoe UI", "Lucida Grande", Verdana, "Helvetica Neue", Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
 }
 h2 {
   font-size: 1.4rem;
@@ -244,7 +244,7 @@ a {
 }
 #container .left-col .overlay {
   width: 100%;
-  height: 180px;
+  height: 28%;
   background-color: #000;
   position: absolute;
   opacity: 0.7;
@@ -252,7 +252,7 @@ a {
 #container .left-col .intrude-less {
   width: 76%;
   text-align: center;
-  margin: 112px auto 0;
+  margin: 35% auto 0;
 }
 #container .left-col li:hover {
   background: none;
@@ -450,23 +450,23 @@ a {
     top: auto; /*In order to cover style in article.styl*/
     bottom: 10px;
     padding: 0.2em 0.4em;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    border-style: outset;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-style: solid;
     background: rgba(255,255,255,0.7);
     font-size: 1em;
     font-weight: bold;
     color: #808080;
   }
   #container #tocButton:hover {
-    color: #88acdb;
+    color: #bdb76b;
     font-size: 1em;
   }
   #container .toc-article {
     display: none;
     z-index: 99;
     left: 0;
-    top: 38%;
+    top: 3rem;
     bottom: 1em;
     height: auto;
     max-height: 58%;
@@ -556,7 +556,7 @@ a {
 .header-author {
   text-align: center;
   margin: 13px 0;
-  font-family: Times, Georgia, serif;
+  font-family: "Verdana,Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Aril, sans-serif;
   font-size: 30px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -567,15 +567,15 @@ a {
   width: 100%;
 }
 #header a {
-  color: #696969;
+  color: #8e388e;
 }
 #header a:hover {
-  color: #b0a0aa;
+  color: #bdb76b;
 }
 #header .profilepic {
   text-align: center;
   display: block;
-  border: 5px solid #fff;
+  border: 3px solid #f8f8ff;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 128px;
@@ -583,7 +583,7 @@ a {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background: #88acdb;
+  background: #c0ff3e;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: center;
   -webkit-box-align: center;
@@ -607,9 +607,9 @@ a {
 }
 #header .profilepic:hover {
   background: #fff;
-  border: 5px solid #88acdb;
-  -webkit-box-shadow: 0 0 1.5em #88acdb;
-  box-shadow: 0 0 1.5em #88acdb;
+  border: 4px solid #c0ff3e;
+  -webkit-box-shadow: 0 0 1.5em #fff;
+  box-shadow: 0 0 1.5em #fff;
   -webkit-animation: profilepic 0.15s linear infinite alternate;
   -moz-animation: profilepic 0.15s linear infinite alternate;
   -ms-animation: profilepic 0.15s linear infinite alternate;
@@ -669,13 +669,13 @@ a {
 }
 #header .header-menu {
   font-weight: 550;
-  line-height: 1.75rem;
+  line-height: 1.875rem;
   font-family: inherit;
   cursor: pointer;
   text-transform: uppercase;
   float: none;
-  min-height: 5.25rem;
-  max-height: 8.75rem;
+  min-height: 5.625rem;
+  max-height: 9.375rem;
   overflow: auto;
   text-align: center;
   display: -webkit-box;
@@ -694,21 +694,21 @@ a {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: 260px;
+  min-height: 200px;
   font-size: 0.875rem;
 }
 #header .switch-area .switch-wrap {
-  -webkit-transition: -webkit-transform 0.3s ease-in;
-  -moz-transition: -moz-transform 0.3s ease-in;
-  -ms-transition: -ms-transform 0.3s ease-in;
-  transition: transform 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.2s ease-in-out;
+  -ms-transition: -ms-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   position: relative;
 }
 #header .turn-left {
-  -webkit-transform: translate(-100%, 0);
-  -moz-transform: translate(-100%, 0);
-  -ms-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 #header .header-nav {
   width: 100%;
@@ -728,30 +728,30 @@ a {
 #header .switch-part2 {
   left: 100%;
   overflow-y: auto;
-  max-height: 260px;
+  max-height: 200px;
   font-size: 0.75rem;
 }
 #header .switch-part3 {
   left: 200%;
   line-height: 1.6;
   overflow-y: auto;
-  max-height: 260px;
+  max-height: 200px;
 }
 #header .switch-part3 .switch-friends-link {
   display: inline-block;
   margin-right: 9px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  padding: 5px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  padding: 0px;
 }
 #header .switch-part3 .switch-friends-link:hover {
-  background: #88acdb;
-  color: #fff;
+  font-size: 105%;
+  color: #bdb76d;
 }
 #header .switch-part4 {
   left: 300%;
-  text-align: left;
-  line-height: 30px;
+  text-align: center;
+  line-height: 25px;
 }
 #header .header-nav .social {
   margin-top: 10px;
@@ -1058,7 +1058,7 @@ a {
 }
 #post-nav-button {
   left: 300px;
-  top: 61.8%;
+  top: 70%;
 }
 #post-nav-button a {
   border-bottom-color: transparent;
@@ -1082,11 +1082,14 @@ a {
   color: #808080;
 }
 .post-list li a:hover {
-color
+  color: #bdb76b;
   text-decoration: none;
 }
+.post-list li:hover {
+  background: none;
+}
 .post-list li:hover a {
-  color: #88acdb;
+  color: #bdb76d;
 }
 .pace .pace-progress {
   background: #77b6ff;
@@ -1690,13 +1693,13 @@ li:hover {
   background: #f0f0f0;
 }
 #tocButton {
-  position: fixed;
-  left: 220px;
+  position: relative;
+  left: 100px;
   top: 385px;
-  font-size: 0.9em;
-  font-weight: bold;
+  font-size: 1em;
+  font-weight: none;
   font-family: inherit;
-  color: #d3d3d3;
+  color: #808080;
   cursor: pointer;
   background: none;
   border: none;
@@ -1704,7 +1707,7 @@ li:hover {
   -webkit-appearance: none;
 }
 #tocButton:hover {
-  color: #88acdb;
+  color: #bdb76b;
 }
 .toc-article {
   position: fixed;
@@ -1723,14 +1726,14 @@ li:hover {
   line-height: 1.65em;
 }
 #toc .toc-title {
-  font-weight: bold;
+  font-weight: none;
   color: #808080;
 }
 #toc .toc-title.clickable {
   cursor: pointer;
 }
 #toc .toc-title.clickable:hover {
-  color: #88acdb;
+  color: #bdb76b;
 }
 #toc .toc-title.clickable:active {
   color: #d3d3d3;
@@ -1767,9 +1770,8 @@ li:hover {
   color: #f48385;
 }
 #toc ol.toc a.toc-link:hover {
-  color: #88acdb;
+  color: #bdb76b;
   text-decoration: none;
-  background: rgba(158,188,226,0.21);
 }
 #toc ol.toc ol.toc-child {
   padding-left: 1.25em;
@@ -2221,7 +2223,7 @@ aside.comment-bar:active {
 .article-entry .gist .gist-file .gist-meta {
   background: rgba(249,249,249,0.5);
   color: #8e908c;
-  font: 0.85em "Lucida Grande", Verdana, "Helvetica Neue", Arial;
+  font: 0.85em "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
   text-shadow: 0 0;
   padding: 0;
   margin-top: 1em;
@@ -2783,7 +2785,7 @@ pre .javascript .function {
   border-radius: 0 5px 5px 0;
   margin: 5px 9px 5px 8px;
   opacity: 0.75;
-  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei" "Lucida Grande", Verdana, "Helvetica Neue", Arial;
+  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei" "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 .tagcloud a.color0 {
   background: #88acdb;
