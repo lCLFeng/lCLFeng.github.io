@@ -121,7 +121,7 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif, "PingFang SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   background: #fff;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -148,7 +148,7 @@ h3 {
 }
 h1 {
   font-size: 1.6rem;
-  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "PingFang SC", "Segoe UI", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif, "PingFang SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
 }
 h2 {
   font-size: 1.4rem;
@@ -291,22 +291,22 @@ a {
   }
   #container .overlay .slider-trigger {
     position: absolute;
-    z-index: 101;
+    z-index: 105;
     bottom: 0;
     left: 0;
     width: 42px;
     height: 42px;
   }
   #container .overlay .slider-trigger:hover {
-    background: #444;
+    background: rgba(0,0,0,0.1);
   }
   #container .overlay .slider-trigger:before {
-    color: #ddd;
+    color: #fff;
     content: "\f00b";
     font: 16px FontAwesome;
     width: 16px;
     height: 16px;
-    margin-left: 9px;
+    margin-left: 13px;
     margin-top: 14px;
     display: block;
   }
@@ -446,7 +446,7 @@ a {
   #container #tocButton {
     z-index: 100;
     position: fixed;
-    left: 0.5em;
+    left: 0.53em;
     top: auto; /*In order to cover style in article.styl*/
     bottom: 10px;
     padding: 0.2em 0.4em;
@@ -466,7 +466,7 @@ a {
   #container .toc-article {
     display: none;
     z-index: 105;
-    left: 0;
+    left: 0.53em;
     top: 2.2rem;
     bottom: 1em;
     height: auto;
@@ -499,11 +499,19 @@ a {
   #container .toc-article ol {
     margin: 0;
     padding: 0.5em;
+    border-style: solid;
+    border-width: 1px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border: 1px solid #fff;
     background: rgba(255,255,255,0.9);
   }
   #container .toc-article ol ol {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(255,255,255,0.9);
     padding: 0.1em 0;
     padding-left: 1.2em;
   }
@@ -523,15 +531,15 @@ a {
   #container .hide-labels {
     z-index: 100;
     position: fixed;
-    left: 0.5em;
+    left: 0.53em;
     top: auto;
     bottom: 10px;
     padding: 0.2em 0.4em;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    border-style: outset;
-    opacity: 0.9;
-    background: rgba(255,255,255,0.8);
+    border-style: solid;
+    border-width: 2px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: rgba(255,255,255,0.9);
     font-weight: bold;
     color: #808080;
   }
@@ -2127,7 +2135,7 @@ aside.comment-bar:active {
 }
 .article-entry pre,
 .article-entry code {
-  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, monospace, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei";
+  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, monospace, "PingFang SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei";
   font-size: 1em;
 }
 .article-entry pre code {
@@ -2299,7 +2307,7 @@ pre .javascript .function {
 }
 #footer {
   font-size: 0.8rem;
-  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   text-shadow: 0 1px #fff;
   position: absolute;
   bottom: 20px;
@@ -2824,7 +2832,7 @@ pre .javascript .function {
   border-radius: 0 5px 5px 0;
   margin: 5px 9px 5px 8px;
   opacity: 0.75;
-  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei" "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei" "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 }
 .tagcloud a.color0 {
   background: #88acdb;
@@ -3008,12 +3016,12 @@ pre .javascript .function {
   width: 100%;
   height: 100%;
   position: relative;
-  color: #ccc;
+  color: #ddd;
   -webkit-transform: translate3d(-100%, 0, 0);
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
 }
 #viewer-box .viewer-box-l {
-  background: rgba(20,20,20,0.9);
+  background: rgba(20,20,20,0.8);
   width: 80%;
   height: auto;
   -webkit-box-flex: 0;
@@ -3044,7 +3052,7 @@ pre .javascript .function {
   margin-right: 10px;
 }
 #viewer-box .viewer-box-l .viewer-div {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted #888;
   padding-bottom: 13px;
   line-height: 20px;
 }
