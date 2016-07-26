@@ -18,15 +18,15 @@
     
 
 
-<meta name="description" content="一句话可以描述龍哥吗？">
+<meta name="description" content="lCLFeng">
 <meta property="og:type" content="website">
 <meta property="og:title" content="lCLFeng">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="lCLFeng">
-<meta property="og:description" content="一句话可以描述龍哥吗？">
+<meta property="og:description" content="lCLFeng">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lCLFeng">
-<meta name="twitter:description" content="一句话可以描述龍哥吗？">
+<meta name="twitter:description" content="lCLFeng">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -81,7 +81,9 @@
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -107,7 +109,7 @@
         </hgroup>
 
         
-        <p class="header-subtitle">一句话可以描述龍哥吗</p>
+        <p class="header-subtitle">晚期强迫症设计爱好者前端进行时</p>
         
 
         
@@ -165,6 +167,8 @@
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
+                            <li><a href="/tags/随笔">随笔</a></li>
+                        
                             <li><a href="/tags/">标签云</a></li>
                         
                             <li><a href="/about/">关于我</a></li>
@@ -214,7 +218,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">关于我，一句话描述不了，两句也不行</div>
+                    <div id="js-aboutme">晚期强迫症设计爱好者前端进行时</div>
                 </section>
                 
             </div>
@@ -237,7 +241,7 @@
               <h1 class="header-author"><a href="/" title="回到主页">lCLFeng</a></h1>
             </hgroup>
             
-            <p class="header-subtitle">一句话可以描述龍哥吗</p>
+            <p class="header-subtitle">晚期强迫症设计爱好者前端进行时</p>
             
             <nav class="header-menu">
                 <ul>
@@ -245,6 +249,8 @@
                     <li><a href="/">主页</a></li>
                 
                     <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/随笔">随笔</a></li>
                 
                     <li><a href="/tags/">标签云</a></li>
                 
@@ -281,6 +287,15 @@
       <time datetime="2016-07-24T05:51:13.000Z" itemprop="datePublished">2016-07-24</time>
 </a>
 
+ 
+    <a href="/2016/07/24/第三篇/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/07/24/第三篇/" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -347,6 +362,15 @@
       <time datetime="2016-07-23T17:42:59.182Z" itemprop="datePublished">2016-07-24</time>
 </a>
 
+ 
+    <a href="/2016/07/24/hello-world/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/07/24/hello-world/" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -441,6 +465,8 @@
 </footer>
     </div>
     
+    <script src="/js/GithubRepoWidget.js"></script>
+
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
     <script>
@@ -460,7 +486,53 @@
     </script>
 
 
+    
+        <script>
+            if ($(".left-col").is(":visible")) {
+                var duoshuoQuery = {short_name:"lclfeng"};
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'http://static.duoshuo.com/embed.js';
+                    s.async = true; s.charset = 'UTF-8';
+                    (d.head || d.body).appendChild(s);
+                })();
 
+                $(document).ready(function(){
+                    var $duoshuoCount = $(".ds-thread-count");
+                    $duoshuoCount.bind("DOMNodeInserted", function(e) {
+                        var num = $(this).text().replace(/[^0-9]/ig,"");
+                        $(this).siblings(".count-comment").text(num);
+                        $(this).remove();
+                    })
+                })
+            }
+        </script>
+    
+
+     
+
+
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <div class="scroll" id="scroll">
@@ -472,7 +544,7 @@
     // Open in New Window
     
         var oOpenInNew = {
-            
+             github: ".github-widget a", 
             
             
             
