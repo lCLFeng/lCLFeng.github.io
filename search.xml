@@ -70,5 +70,17 @@
   
   
     
+    <entry>
+      <title><![CDATA[categories]]></title>
+      <url>http://lclfeng.github.io/categories/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[标签]]></title>
+      <url>http://lclfeng.github.io/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
   
 </search>

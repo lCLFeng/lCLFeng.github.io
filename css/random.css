@@ -240,8 +240,8 @@ a:hover {
 }
 .tag-cloud-tags a:hover {
   text-decoration: none;
-  background-color: #bbb;
-  color: #000;
+  color: transparent;
+  -webkit-text-stroke: 4px #f00;
 }
 .center-title {
   text-align: center;
