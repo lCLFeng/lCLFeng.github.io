@@ -19,13 +19,7 @@ a {
   text-decoration: none;
   color: #8e388e;
 }
-a::before {
-  top: 0;
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  transform: translateY(-10px);
-}
-a::after {
+a:hover {
   bottom: 0;
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
