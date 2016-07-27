@@ -19,8 +19,7 @@ a {
   text-decoration: none;
   color: #8e388e;
 }
-a:hover span,
-a:focus span {
+a:hover {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
   transform: translateY(-100%);
