@@ -232,15 +232,17 @@ a:hover {
   padding: 10px;
 }
 .tag-cloud-tags {
-  border-radius: 120px 0 0;
-  border: 2px dashed #333;
   text-align: center;
 }
 .tag-cloud-tags a {
   padding: 3px;
+  border-radius: 1px;
+  border: 1px solid #e8e8e8;
 }
 .tag-cloud-tags a:hover {
   text-decoration: none;
+  background-color: #bbb;
+  color: #000;
 }
 .center-title {
   text-align: center;
