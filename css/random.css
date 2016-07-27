@@ -17,10 +17,19 @@ article {
 }
 a {
   text-decoration: none;
-  color: #3a539b;
+  color: #8e388e;
 }
-a:hover {
-  text-decoration: underline;
+a::before {
+  top: 0;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+a::after {
+  bottom: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
 }
 #outer-container {
   position: absolute;
