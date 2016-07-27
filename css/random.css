@@ -232,6 +232,8 @@ a:hover {
   padding: 10px;
 }
 .tag-cloud-tags {
+  border-radius: 120px 0 0;
+  border: 2px dashed #333;
   text-align: center;
 }
 .tag-cloud-tags a {
@@ -239,8 +241,6 @@ a:hover {
 }
 .tag-cloud-tags a:hover {
   text-decoration: none;
-  color: transparent;
-  -webkit-text-stroke: 4px #f00;
 }
 .center-title {
   text-align: center;
