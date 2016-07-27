@@ -114,6 +114,10 @@ a:hover {
   color: #7f8c8d;
   margin: 0px auto;
 }
+#busuanzi_container_site_pv {
+  position: absolute;
+  left: 50%;
+}
 .center-field {
   margin: 0 auto;
 }
