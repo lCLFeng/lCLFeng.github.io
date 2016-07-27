@@ -116,9 +116,9 @@
   <article id="post">
     <h1>第三篇</h1>
     <p class="page-title-sub">
-      <span id = "post-title-date">撰写于 2016-07-24</span>
+      <span id = "post-title-date">发布 2016-07-24</span>
       
-        <span id = "post-title-updated">修改于 2016-07-27</span>
+        <span id = "post-title-updated">更新 2016-07-27</span>
       
       
       
@@ -197,6 +197,17 @@
 <p>文／周世通的微观世界（简书作者）<br>原文链接：<a href="http://www.jianshu.com/p/88a5cb17a8bc" target="_blank" rel="external">http://www.jianshu.com/p/88a5cb17a8bc</a><br>著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。<br><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">http://www.jianshu.com/p/05289a4bc8b2</a></p>
 
   </article>
+  <% if (item.excerpt && index){ %>
+ <% } else { %>
+ <div class="busuanzi_container_page_pv">
+   <span class="head-plus">
+   <i class="fa fa-user"></i><span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>次访问
+   </span>
+   <span class="head-plus">
+   <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="<%= page.layout %>-<%= page.slug %>"><i class="fa fa-spinner fa-spin"></i></span>条评论
+   </span>
+ </div>
+ <% } %>
   <div class="random-toc-area">
   <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
   <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
