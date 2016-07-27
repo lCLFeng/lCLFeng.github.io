@@ -19,11 +19,11 @@ a {
   text-decoration: none;
   color: #8e388e;
 }
-a:hover {
-  bottom: 0;
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  transform: translateY(10px);
+a:hover span,
+a:focus span {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 #outer-container {
   position: absolute;
