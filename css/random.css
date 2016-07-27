@@ -115,8 +115,10 @@ a:hover {
   margin: 0px auto;
 }
 #busuanzi_container_site_pv {
-  position: absolute;
-  left: 50%;
+  position: fixed;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .center-field {
   margin: 0 auto;
