@@ -20,9 +20,8 @@ a {
   color: #8e388e;
 }
 a:hover {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  transform: translateY(-100%);
+  color: #8e8e38;
+  font-weight: bold;
 }
 #outer-container {
   position: absolute;
