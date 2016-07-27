@@ -116,6 +116,7 @@ a:hover {
 }
 #busuanzi_container_site_pv {
   position: fixed;
+  text-align: center;
   bottom: 0;
   margin-left: auto;
   margin-right: auto;
