@@ -235,14 +235,15 @@ a:hover {
   text-align: center;
 }
 .tag-cloud-tags a {
+  color: #fff;
+  background-color: #ee7600;
   padding: 3px;
-  border-radius: 1px;
-  border: 1px solid #e8e8e8;
+  border-radius: 1px 2px;
 }
 .tag-cloud-tags a:hover {
   text-decoration: none;
   background-color: #bbb;
-  color: #000;
+  color: #ee7600;
 }
 .center-title {
   text-align: center;
