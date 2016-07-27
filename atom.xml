@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>lCLFeng</title>
-  <subtitle>晚期强迫症设计爱好者前端进行时</subtitle>
+  <subtitle>晚期强迫症|设计爱好者|前端进行时</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://lclfeng.github.io/"/>
   <updated>2016-07-24T06:27:24.744Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://lclfeng.github.io/</id>
   
   <author>
     <name>lCLFeng</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>第三篇</title>
-    <link href="http://yoursite.com/2016/07/24/%E7%AC%AC%E4%B8%89%E7%AF%87/"/>
-    <id>http://yoursite.com/2016/07/24/第三篇/</id>
+    <link href="http://lclfeng.github.io/2016/07/24/%E7%AC%AC%E4%B8%89%E7%AF%87/"/>
+    <id>http://lclfeng.github.io/2016/07/24/第三篇/</id>
     <published>2016-07-24T05:51:13.000Z</published>
     <updated>2016-07-24T06:27:24.744Z</updated>
     
@@ -75,14 +75,14 @@
     </summary>
     
     
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="测试" scheme="http://lclfeng.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/07/24/hello-world/"/>
-    <id>http://yoursite.com/2016/07/24/hello-world/</id>
+    <link href="http://lclfeng.github.io/2016/07/24/hello-world/"/>
+    <id>http://lclfeng.github.io/2016/07/24/hello-world/</id>
     <published>2016-07-23T17:42:59.182Z</published>
     <updated>2016-07-23T17:42:59.182Z</updated>
     
