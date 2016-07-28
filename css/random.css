@@ -118,7 +118,7 @@ a:hover {
   position: fixed;
   text-align: center;
   display: block;
-padding
+  padding: 2px 2px;
   margin-left: auto;
   margin-right: auto;
 }
