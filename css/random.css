@@ -630,6 +630,8 @@ blockquote {
     margin-left: 3px;
   }
   #show-menu {
+    border-style: 1px #8e388e;
+    background: none;
     display: inline-block;
   }
   article img {
