@@ -357,6 +357,7 @@ article img {
   text-align: center;
   color: #333;
   display: none;
+  width: 400px;
 }
 #user-card .avatar {
   width: 96px;
