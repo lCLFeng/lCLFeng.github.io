@@ -214,7 +214,7 @@ a:hover {
 #menu-outer #avatar {
   border-radius: 50%;
   border: 2px wihte solid;
-  box-shadow: 0 0px 1px 1px rgba(150,50,150,0.2);
+  box-shadow: 0 0px 1px 1px rgba(150,50,150,0.3);
   vertical-align: middle;
   width: 32px;
   height: 32px;
@@ -358,25 +358,25 @@ article img {
   color: #333;
   display: none;
 }
-#user-card #user-card .avatar {
+#user-card .avatar {
   width: 96px;
   height: 96px;
   margin-top: 0px;
 }
-#user-card #user-card ul {
+#user-card ul {
   list-style: none;
   padding: 0px;
 }
-#user-card #user-card ul li {
+#user-card ul li {
   display: inline;
   margin: 0px;
   padding: 0px 3px;
 }
-#user-card #show-menu {
+#show-menu {
   display: none;
   float: right;
 }
-#user-card #show-menu button {
+#show-menu button {
   background-color: #eee;
   border: 1px #444 solid;
   padding: 6px;
@@ -384,88 +384,88 @@ article img {
   right: 0;
   left: auto;
 }
-#user-card .category-list-item .active {
+.category-list-item .active {
   background-color: #4183d7;
   color: #fff;
 }
-#user-card .category-list-item .active:hover {
+.category-list-item .active:hover {
   background-color: #22a7f0;
 }
-#user-card .social-icon {
+.social-icon {
   padding-left: 0px;
 }
-#user-card .social-icon li {
+.social-icon li {
   display: inline;
 }
-#user-card .social-icon li a {
+.social-icon li a {
   color: #808080;
 }
-#user-card .social-icon li a i {
+.social-icon li a i {
   font-size: 25px;
 }
-#user-card .social-icon li a:hover {
+.social-icon li a:hover {
   text-decoration: none;
 }
-#user-card .douban:hover {
+.douban:hover {
   color: #072;
 }
-#user-card .twitter:hover {
+.twitter:hover {
   color: #1da1f2;
 }
-#user-card .linkedin:hover {
+.linkedin:hover {
   color: #333;
 }
-#user-card .weibo:hover {
+.weibo:hover {
   color: #fa7d3c;
 }
-#user-card .google-plus:hover {
+.google-plus:hover {
   color: #d73d32;
 }
-#user-card .facebook:hover {
+.facebook:hover {
   color: #0e385f;
 }
-#user-card .dribbble:hover {
+.dribbble:hover {
   color: #ea4c89;
 }
-#user-card .github:hover {
+.github:hover {
   color: #4078c0;
 }
-#user-card .coding:hover {
+.coding:hover {
   color: #000;
 }
-#user-card .npmjs:hover {
+.npmjs:hover {
   color: #cb3837;
 }
-#user-card .youtube:hover {
+.youtube:hover {
   color: #cc181e;
 }
-#user-card .zhihu:hover {
+.zhihu:hover {
   color: #0e78e7;
 }
-#user-card .lofter:hover {
+.lofter:hover {
   color: #444;
 }
-#user-card .quora:hover {
+.quora:hover {
   color: #b92b27;
 }
-#user-card .rss:hover {
+.rss:hover {
   color: #d35400;
 }
-#user-card .side-navigate {
+.side-navigate {
   position: fixed;
   top: 60%;
   width: 100%;
   z-index: 2;
   pointer-events: none;
 }
-#user-card .side-navigate .item {
+.side-navigate .item {
   display: table-cell;
 }
-#user-card .side-navigate .item-icon:hover {
+.side-navigate .item-icon:hover {
   opacity: 1;
   background-size: 40px 40px;
 }
-#user-card .side-navigate .item-icon {
+.side-navigate .item-icon {
   pointer-events: auto;
   opacity: 0.55;
   padding: 20px;
@@ -477,21 +477,21 @@ article img {
   background-position: center;
   background-size: 30px 30px;
 }
-#user-card .side-navigate a:hover + div {
+.side-navigate a:hover + div {
   display: block;
 }
-#user-card .side-navigate a:hover {
+.side-navigate a:hover {
   display: block;
 }
-#user-card .side-navigate .prev .item-icon {
+.side-navigate .prev .item-icon {
   background-image: url("prev.png");
   float: left;
 }
-#user-card .side-navigate .prev {
+.side-navigate .prev {
   display: inline-block;
   left: 0;
 }
-#user-card .side-navigate .item-title {
+.side-navigate .item-title {
   display: none;
   padding: 10px;
   max-width: 300px;
@@ -499,38 +499,38 @@ article img {
   background-color: #52b3d9;
   height: 52px;
 }
-#user-card .side-navigate .next .item-icon {
+.side-navigate .next .item-icon {
   background-image: url("next.png");
   float: right;
 }
-#user-card .side-navigate .prev .item-title {
+.side-navigate .prev .item-title {
   margin-left: 70px;
 }
-#user-card .side-navigate .next .item-title {
+.side-navigate .next .item-title {
   margin-right: 70px;
 }
-#user-card .side-navigate .next {
+.side-navigate .next {
   display: inline-block;
   float: right;
   right: 0;
 }
-#user-card .fancybox-thumb:hover {
+.fancybox-thumb:hover {
   text-decoration: none;
 }
-#user-card .fancybox-thumb img {
+.fancybox-thumb img {
   max-width: 120px;
   max-height: 120px;
   padding: 3px;
   border-radius: 5%;
   border: 1px solid #ddd;
 }
-#user-card .caption {
+.caption {
   display: block;
   text-align: center;
   font-size: 14px;
   color: #999;
 }
-#user-card .random-toc-area {
+.random-toc-area {
   position: fixed;
   width: 200px;
   right: 0px;
@@ -538,11 +538,11 @@ article img {
   display: block;
 }
 @media (max-width: 1360px) {
-  #user-card .random-toc-area {
+  .random-toc-area {
     display: none;
   }
 }
-#user-card .random-toc {
+.random-toc {
   background: #444;
   color: #bbb;
   height: 500px;
@@ -551,23 +551,23 @@ article img {
   height: 100%;
   overflow-y: auto;
 }
-#user-card .random-toc ol {
+.random-toc ol {
   padding-left: 15px;
 }
-#user-card .random-toc h2 {
+.random-toc h2 {
   text-align: center;
 }
-#user-card .random-toc a {
+.random-toc a {
   color: #bbb;
   display: block;
 }
-#user-card .toc-text {
+.toc-text {
   display: block;
 }
-#user-card .toc-text:hover {
+.toc-text:hover {
   background-color: #666;
 }
-#user-card .btn-hide-toc {
+.btn-hide-toc {
   border: none;
   z-index: 1;
   display: block;
@@ -576,66 +576,66 @@ article img {
   height: 30px;
   color: #bbb;
 }
-#user-card .btn-hide-toc:hover {
+.btn-hide-toc:hover {
   background-color: #888;
 }
-#user-card figure.highlight {
+figure.highlight {
   margin: 0px -10px 0px -10px;
 }
-#user-card figure.highlight td.gutter {
+figure.highlight td.gutter {
   padding-right: 20px;
 }
-#user-card figure.highlight .line {
+figure.highlight .line {
   white-space: pre-wrap;
 }
-#user-card code {
+code {
   font-family: Consolas, Monaco, Courier New, Lucida Console;
   background-color: #ddd;
   font-style: italic;
   padding-left: 12px;
   padding-right: 12px;
 }
-#user-card table .line {
+table .line {
   font-family: Consolas, Monaco, Courier New, Lucida Console;
 }
-#user-card blockquote {
+blockquote {
   background-color: #eee;
   padding: 2px 10px;
   border-left: 2px solid #999;
 }
 @media (max-width: 1060px) {
-  #user-card .side-navigate {
+  .side-navigate {
     display: none;
   }
-  #user-card .jiathis_style {
+  .jiathis_style {
     display: none;
     visibility: hidden;
   }
 }
 @media (max-width: 760px) {
-  #user-card #outer-container,
-  #user-card .random-center,
-  #user-card #menu-outer {
+  #outer-container,
+  .random-center,
+  #menu-outer {
     width: 100%;
   }
-  #user-card #outer-container {
+  #outer-container {
     left: 0%;
     margin-left: 0px;
   }
-  #user-card #menu-inner {
+  #menu-inner {
     width: 95%;
     padding: 0 2%;
   }
-  #user-card .post-title-item {
+  .post-title-item {
     margin-left: 3px;
   }
-  #user-card #show-menu {
+  #show-menu {
     display: inline-block;
   }
-  #user-card article img {
+  article img {
     width: 95%;
   }
-  #user-card #menu-list {
+  #menu-list {
     display: none;
     position: absolute;
     margin-top: 50px;
@@ -643,39 +643,39 @@ article img {
     opacity: 0.85;
     width: 100%;
   }
-  #user-card #menu-list ul {
+  #menu-list ul {
     padding-left: 0px;
   }
-  #user-card #menu-list ul li {
+  #menu-list ul li {
     text-align: center;
     display: block;
   }
-  #user-card .highlight {
+  .highlight {
     margin-left: 0px;
     margin-right: 0px;
   }
 }
 @media (max-width: 760px) and (max-width: 480px) {
-  #user-card .random-center {
+  .random-center {
     position: static;
     left: 0;
     margin-left: 0px;
     width: 100%;
     margin-top: 30%;
   }
-  #user-card #random-index .index-nav-link li {
+  #random-index .index-nav-link li {
     display: block;
   }
-  #user-card #bottom-outer,
-  #user-card #random-index {
+  #bottom-outer,
+  #random-index {
     opacity: 0.95;
   }
-  #user-card #menu-outer {
+  #menu-outer {
     opacity: 0.95;
   }
 }
 @media (max-width: 760px) and (max-height: 480px) {
-  #user-card .random-center {
+  .random-center {
     position: static;
     top: 0;
     left: 0;
@@ -683,13 +683,13 @@ article img {
     margin-top: 95px;
     width: 100%;
   }
-  #user-card #random-index .index-nav-link li {
+  #random-index .index-nav-link li {
     display: block;
     padding: 0px 0px;
   }
 }
 @media (max-width: 760px) and (max-height: 320px) {
-  #user-card .random-center {
+  .random-center {
     margin-top: 75px;
   }
 }
