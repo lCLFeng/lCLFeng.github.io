@@ -353,10 +353,6 @@ article img {
   }
 }
 #user-card {
-  margin: 20px;
-  padding-bottom: 20px;
-  border-radius: 10px;
-  background-color: #ecf0f1;
   text-align: center;
   color: #333;
   display: none;
