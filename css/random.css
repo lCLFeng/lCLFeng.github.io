@@ -28,7 +28,7 @@ a:hover {
   left: 50%;
   width: 960px;
   margin-left: -480px;
-  box-shadow: 0 0 2em rgba(20,20,20,0.3);
+  box-shadow: 0 0 2em rgba(142,56,142,0.3);
 }
 @media (max-width: 960px) {
   #outer-container {
