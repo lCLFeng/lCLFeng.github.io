@@ -232,7 +232,7 @@ a:hover {
     font-size: 12px;
   }
 }
-#bottom.fa-site {
+#bottom-outer .fa-site {
   color: #fff;
 }
 #container {
