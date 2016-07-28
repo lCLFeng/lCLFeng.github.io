@@ -232,9 +232,6 @@ a:hover {
     font-size: 12px;
   }
 }
-#bottom-outer .fa-site {
-  color: #fff;
-}
 #container {
   margin-top: 50px;
 }
@@ -362,8 +359,8 @@ article img {
   display: none;
 }
 #user-card .avatar {
-  width: 96px;
-  height: 96px;
+  width: 2006px;
+  height: 200px;
   margin-top: 0px;
 }
 #user-card ul {
