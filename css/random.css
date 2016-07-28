@@ -75,7 +75,7 @@ a:hover {
   margin: 20px;
   padding-bottom: 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ecf0f1;
 }
 #random-index a {
@@ -356,6 +356,7 @@ article img {
   text-align: center;
   color: #333;
   display: none;
+  width: 100%;
 }
 #user-card .avatar {
   width: 96px;
