@@ -71,14 +71,32 @@
   
     
     <entry>
-      <title><![CDATA[categories]]></title>
-      <url>http://lclfeng.github.io/categories/index.html</url>
+      <title><![CDATA[about]]></title>
+      <url>http://lclfeng.github.io/about/index-1.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[about]]></title>
+      <url>http://lclfeng.github.io/about/index-2.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[about]]></title>
+      <url>http://lclfeng.github.io/about/index.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
       <title><![CDATA[标签]]></title>
       <url>http://lclfeng.github.io/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[categories]]></title>
+      <url>http://lclfeng.github.io/categories/index.html</url>
       <content type="html"></content>
     </entry>
     
