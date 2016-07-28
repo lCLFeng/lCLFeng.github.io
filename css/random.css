@@ -647,6 +647,7 @@ blockquote {
     padding-left: 0px;
   }
   #menu-list ul li {
+    color: #8e388e;
     text-align: center;
     display: block;
   }
