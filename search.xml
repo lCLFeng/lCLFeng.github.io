@@ -71,12 +71,6 @@
   
     
     <entry>
-      <title><![CDATA[分类]]></title>
-      <url>http://lclfeng.github.io/categories/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[关于我]]></title>
       <url>http://lclfeng.github.io/about/index.html</url>
       <content type="html"><![CDATA[<p>我就是我</p>
@@ -86,6 +80,12 @@
     <entry>
       <title><![CDATA[标签]]></title>
       <url>http://lclfeng.github.io/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[分类]]></title>
+      <url>http://lclfeng.github.io/categories/index.html</url>
       <content type="html"></content>
     </entry>
     
