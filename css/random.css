@@ -601,7 +601,7 @@ table .line {
 }
 blockquote {
   background-color: #eee;
-  padding: 2px 10px;
+  padding: 0px 0px;
   border-left: 2px solid #999;
 }
 @media (max-width: 1060px) {
