@@ -600,9 +600,12 @@ table .line {
   font-family: Consolas, Monaco, Courier New, Lucida Console;
 }
 blockquote {
-  background-color: #eee;
-  padding: 0px 0px;
-  border-left: 2px solid #999;
+  background-color: #eeefff;
+  padding: 0px 5px 0px 10px;
+  text-align: justify;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-left: 5px solid #8e388e;
 }
 @media (max-width: 1060px) {
   .side-navigate {
