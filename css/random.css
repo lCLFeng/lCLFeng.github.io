@@ -319,13 +319,6 @@ ul.category-list li a:hover {
   border-radius: 100px;
   line-height: 28px;
 }
-#pagination a:hover {
-  background-color: #fff;
-  color: #8e8e38;
-  border: 1px #999 solid;
-  border-radius: 100px;
-  text-decoration: none;
-}
 #btn-view {
   color: #c8f7c5;
   text-align: center;
@@ -476,62 +469,6 @@ article img {
   width: 100%;
   z-index: 2;
   pointer-events: none;
-}
-.side-navigate .item {
-  display: table-caption;
-}
-.side-navigate .item-icon:hover {
-  opacity: 1;
-  background-size: 40px 40px;
-}
-.side-navigate .item-icon {
-  pointer-events: auto;
-  opacity: 0.55;
-  padding: 20px;
-  border-radius: 50%;
-  border: 1px #52b3d9 solid;
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px 30px;
-}
-.side-navigate a:hover + div {
-  display: block;
-}
-.side-navigate a:hover {
-  display: block;
-}
-.side-navigate .prev .item-icon {
-  background-image: url("prev.png");
-  float: left;
-}
-.side-navigate .prev {
-  display: inline-block;
-  left: 0;
-}
-.side-navigate .item-title {
-  display: none;
-  padding: 10px;
-  max-width: 300px;
-  vertical-align: center;
-  background-color: #52b3d9;
-  height: 52px;
-}
-.side-navigate .next .item-icon {
-  background-image: url("next.png");
-  float: right;
-}
-.side-navigate .prev .item-title {
-  margin-left: 70px;
-}
-.side-navigate .next .item-title {
-  margin-right: 70px;
-}
-.side-navigate .next {
-  display: inline-block;
-  float: right;
-  right: 0;
 }
 .fancybox-thumb:hover {
   text-decoration: none;
