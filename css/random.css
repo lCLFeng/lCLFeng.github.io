@@ -289,25 +289,30 @@ ul.category-list li a:hover {
   border-left: 2px #bbb solid;
 }
 .post-title-item:hover {
-  border-left: 4px #1e8bc3 solid;
+  border-left: 4px #8e388e solid;
 }
 .post-title-item p {
   margin-top: 2px;
 }
 #pagination {
   margin-top: 20px;
-  height: 30px;
+  height: 60px;
   width: auto;
 }
 #pagination .next {
+  margin-right: auto;
+  margin-left: auto;
   float: right;
   padding-left: 10px;
-  padding-right: 5px;
   text-align: right;
 }
 #pagination .prev {
   float: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
   padding-left: 5px;
+  margin-right: 0px;
   padding-right: 10px;
   text-align: left;
 }
@@ -318,6 +323,15 @@ ul.category-list li a:hover {
   border: 1px #ccc solid;
   border-radius: 100px;
   line-height: 28px;
+}
+#pagination a:hover {
+  padding: 6px;
+  color: #8e388e;
+  background-color: none;
+  border: 1px #8e388e solid;
+  border-radius: 100px;
+  line-height: 28px;
+  font-weight: 200;
 }
 #btn-view {
   color: #c8f7c5;
@@ -555,7 +569,7 @@ table .line {
   font-family: Consolas, Monaco, Courier New, Lucida Console;
 }
 blockquote {
-  background-color: #eeefff;
+  background-color: #f8f8ff;
   padding: 0px 5px 0px 10px;
   text-align: justify;
   margin-left: 0px;
