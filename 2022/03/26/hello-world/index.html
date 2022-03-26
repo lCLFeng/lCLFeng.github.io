@@ -11,7 +11,7 @@
   
   <title>
     
-      Archives 
+      Hello World 
       
       
       |
@@ -106,57 +106,158 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2022</span>
-          </h2>
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Hello World</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2022-03-26 21:51:09
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/hexo/" title="hexo">
+                    <b>#</b> hexo
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E6%B0%B4%E7%AC%94/" title="水笔">
+                    <b>#</b> 水笔
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <p>正如程序员写的第一个程序的输出往往都是“Hello World”一样，这篇博文亦是本博客的建站首文。</p>
+<blockquote>
+<p>此外，something interesting：由于第一次搭建好博客，对博客很陌生，因此，连发表文章都成了棘手的问题，因为之前都是在其他平台写博客，直接在网页就写，这次，完全全新的一个DIY博客，无从下手。因此，那天就在github上修改的博文，2333.后来在本地 hexo g -d 后，github上面的东西呗覆盖了，因此，找不到那天写的“第一篇”博文了</p>
+</blockquote>
+<h2 id="搭建博客的感想"><a href="#搭建博客的感想" class="headerlink" title="搭建博客的感想"></a><strong>搭建博客的感想</strong></h2><h3 id="1-我是新手"><a href="#1-我是新手" class="headerlink" title="1. 我是新手"></a><strong>1. 我是新手</strong></h3><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;这是第一次搭建个人博客。完全从零开始，就是借助搜索过来的教程来自己一步一步搭建。建立属于自己的网站（或者说博客吧）是自己很早之前的想法了，从大一开始吧，就是觉得拥有自己的网站很炫酷，很爽。之前在NYH同学的空间留言上看过她一个同学给她留言叫她帮建一个网站，然后NYH说虽然她读的网络工程但也不会……[扯远了]但由于大一什么都不懂，认知确实有限，但也有可能自己没有很上进地去学习怎么搭建吧，后来大二了，会了点东西，但是由于没有免费的域名，还要自己去买，最蛋疼的是还要每年续费，于是，本着建站来玩玩的心态的我并没有想在域名投入金钱。所以就没有弄。</p>
+<p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;直到2016-7-20号吧，自己打算学学github，于是就开始了github入门学习，学着学着，无意间在网上发现可以利用github pages来免费建站。正好自己会了点东西了。于是就搜索github建站的教程，挖槽，又意外发现hexo+github搭建博客超级简便+超级火。然后就搜教程来搭建了。我当时主要是参考这两篇博文来搭建的[感谢]：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://lijianchang.xyz/2016/03/16/%E5%B0%8F%E7%99%BD%E7%8B%AC%E7%AB%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2-Github-Pages%E5%92%8CHexo%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/#more">小白独立搭建博客-Github-Pages和Hexo简明教程</a><br><a target="_blank" rel="noopener" href="http://blog.shijinrong.cn/2016/01/03/How-to-build-a-blog/">如何使用10个小时搭建出个人域名而又Geek的独立博客？</a></p>
+</blockquote>
+<p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;搭建的过程挺痛苦的，我并没有那么幸运和教程说的那样十个小时搭建好（更有甚者说，半个小时搭建好…）什么原因？？？因为中国特殊的国情吧，对外网的访问有点不可描述，导致我配置环境就搞了三四天而一点进展都没有，所幸，我还是依靠搜索引擎找到了解决方法。</p>
+<p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;于是，2016-7-24晚上接近十二点的时候，我的环境终于配置好，因为我担心第二天就又不行了（之前又一次配好了第二天就不行了，不知道是不是真的配好了），再加上配置好的激动心情，于是，决定熬夜搞！一直搞到凌晨5点，我第一次感觉到自己那么爱写代码！可能是满足了自己对新事物渴望的欲望罢了？！或者是自己对成功充满喜悦吧？！</p>
+<p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;我是在学校的宿舍弄的，南京这几天38℃高温，真是热炸了，睡觉基本是全身是汗，宿舍没空调，风扇吹不到。所以，写代码也是件不错的事情。</p>
+<h3 id="2-第一篇博文"><a href="#2-第一篇博文" class="headerlink" title="2. 第一篇博文"></a><strong>2. 第一篇博文</strong></h3><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;搭建好博客的第一时间就是写篇博文，但发现不知道怎么写、怎么上传到github。于是就修改github的html，太TM天真了我。菜鸟的我哈哈哈哈哈………</p>
+<p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;博文的具体内容就是表达我的喜悦之情和对南京热炸天的温度的怨念（其实是宿舍没空调的愤怒）</p>
+<h3 id="3-仍需努力"><a href="#3-仍需努力" class="headerlink" title="3. 仍需努力"></a><strong>3. 仍需努力</strong></h3><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;发现喜欢的事，就赶紧去做吧！没有多少时间留给你去磨磨唧唧！做不好是另外一回事。去做了又是另外一回事。</p>
+<p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;终于，网站建好了！<br>&amp;#160; &amp;#160; &amp;#160; &amp;#160;有句话说：<em>好腿玩一年</em>。<br>&amp;#160; &amp;#160; &amp;#160; &amp;#160;而我想说：<strong>这个博客我可以玩好几年。</strong></p>
+<hr>
+<p>感谢：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>  </li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>        </li>
+<li><a target="_blank" rel="noopener" href="https://github.com/stiekel/hexo-theme-random">hexo-theme-random</a>   </li>
+<li><a target="_blank" rel="noopener" href="http://www.markdown.cn/">markdown</a></li>
+<li>百度(不放链接了。百毒一下，你就知道)</li>
+</ul>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2016/07/31/%E6%8C%96%E4%B8%AA%E5%9D%91/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2022-03-26 21:51:09
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/hexo/" title="hexo">
+                        <b>#</b> hexo
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E6%B0%B4%E7%AC%94/" title="水笔">
+                        <b>#</b> 水笔
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
       
-      <div class="post-item" title="Hello World">
-        <div class="time-m-d">03-26</div>
-        <div class="title">
-          <a href="/2022/03/26/hello-world/">
-            <span>Hello World</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2016</span>
-          </h2>
-        </div>
-      
-      <div class="post-item" title="挖个坑">
-        <div class="time-m-d">07-31</div>
-        <div class="title">
-          <a href="/2016/07/31/%E6%8C%96%E4%B8%AA%E5%9D%91/">
-            <span>挖个坑</span>
-          </a>
-        </div>
-      </div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%84%9F%E6%83%B3"><span class="toc-text">搭建博客的感想</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%88%91%E6%98%AF%E6%96%B0%E6%89%8B"><span class="toc-text">1. 我是新手</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87"><span class="toc-text">2. 第一篇博文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BB%8D%E9%9C%80%E5%8A%AA%E5%8A%9B"><span class="toc-text">3. 仍需努力</span></a></li></ol></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-      <div class="post-item" title="极限局部保号性的理解">
-        <div class="time-m-d">07-24</div>
-        <div class="title">
-          <a href="/2016/07/24/%E7%AC%AC%E4%B8%89%E7%AF%87/">
-            <span>极限局部保号性的理解</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         
 <div class="footer">
@@ -410,6 +511,24 @@
 
 
         
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Hello%20World + '&url=' + http%3A%2F%2Flclfeng.github.io%2F2022%2F03%2F26%2Fhello-world%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://lclfeng.github.io/2022/03/26/hello-world/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
   
   
 <script src="/js/shares.js"></script>
