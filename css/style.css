@@ -334,14 +334,14 @@ button {
   border-radius: 5px;
   padding: 8px 16px;
   background: var(--background-color);
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
   transition-property: color, background, box-shadow, border-color, transform;
   transition-delay: 0s, 0s, 0s, 0s, 0s;
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
   transition-timing-function: ease, ease, ease, ease, linear;
 }
 .btn:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 .btn:hover {
   color: var(--background-color);
@@ -1246,14 +1246,14 @@ pre .javascript .function {
   padding: 20px;
   box-sizing: border-box;
   background: var(--background-color);
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
   transition-property: color, background, box-shadow, border-color, left, transform;
   transition-delay: 0s, 0s, 0s, 0s, 0s, 0s;
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.3s, 0.2s;
   transition-timing-function: ease, ease, ease, ease, ease-out, linear;
 }
 .page-container .page-aside:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .page-container .page-aside {
@@ -1597,10 +1597,10 @@ pre .javascript .function {
   justify-content: center;
   background: var(--background-color);
   padding-top: 2px;
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
 }
 .header-wrapper:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 .header-wrapper .header-content {
   position: relative;
@@ -1838,7 +1838,7 @@ pre .javascript .function {
   margin-bottom: 12px;
   background: var(--background-color);
   color: var(--default-text-color);
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
   transition-property: color, background, box-shadow, border-color, transform;
   transition-delay: 0s, 0s, 0s, 0s, 0s;
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
@@ -1858,7 +1858,7 @@ pre .javascript .function {
   margin-bottom: 0;
 }
 .post-tools-container .tools-list li:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 .post-tools-container .tools-list li.page-aside-toggle {
   display: none;
@@ -2047,7 +2047,7 @@ pre .javascript .function {
   box-sizing: border-box;
   background: var(--background-color);
   margin-bottom: 30px;
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
 }
 @media (max-width: 780px) {
   .page-template-container {
@@ -2060,7 +2060,7 @@ pre .javascript .function {
   }
 }
 .page-template-container:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .page-template-container {
@@ -2183,10 +2183,10 @@ pre .javascript .function {
   border-radius: 5px;
   box-sizing: border-box;
   background: var(--background-color);
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
 }
 .category-list-container:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .category-list-container {
@@ -2323,7 +2323,7 @@ pre .javascript .function {
   box-sizing: border-box;
   background: var(--background-color);
   margin-bottom: 38px;
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
   transition-property: color, background, box-shadow, border-color, transform;
   transition-delay: 0s, 0s, 0s, 0s, 0s;
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
@@ -2340,7 +2340,7 @@ pre .javascript .function {
   }
 }
 .home-content-container .home-article-list .home-article-item:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .home-content-container .home-article-list .home-article-item {
@@ -2440,7 +2440,7 @@ pre .javascript .function {
   box-sizing: border-box;
   background: var(--background-color);
   margin-bottom: 30px;
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
 }
 @media (max-width: 780px) {
   .archive-container {
@@ -2453,7 +2453,7 @@ pre .javascript .function {
   }
 }
 .archive-container:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .archive-container {
@@ -2473,7 +2473,7 @@ pre .javascript .function {
   box-sizing: border-box;
   background: var(--background-color);
   margin-bottom: 30px;
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
 }
 @media (max-width: 780px) {
   .article-content-container {
@@ -2486,7 +2486,7 @@ pre .javascript .function {
   }
 }
 .article-content-container:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .article-content-container {
@@ -2627,7 +2627,7 @@ pre .javascript .function {
   border-radius: 5px;
   box-sizing: border-box;
   background: var(--background-color);
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
   transition-property: color, background, box-shadow, border-color, transform;
   transition-delay: 0s, 0s, 0s, 0s, 0s;
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
@@ -2635,7 +2635,7 @@ pre .javascript .function {
 }
 .article-content-container .article-nav .article-prev:hover,
 .article-content-container .article-nav .article-next:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .article-content-container .article-nav .article-prev,
@@ -2717,7 +2717,7 @@ pre .javascript .function {
   box-sizing: border-box;
   background: var(--background-color);
   margin-bottom: 30px;
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
 }
 @media (max-width: 780px) {
   .category-container {
@@ -2730,7 +2730,7 @@ pre .javascript .function {
   }
 }
 .category-container:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .category-container {
@@ -2771,7 +2771,7 @@ pre .javascript .function {
   box-sizing: border-box;
   background: var(--background-color);
   margin-bottom: 30px;
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
 }
 @media (max-width: 780px) {
   .tag-container {
@@ -2784,7 +2784,7 @@ pre .javascript .function {
   }
 }
 .tag-container:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .tag-container {
@@ -2824,10 +2824,10 @@ pre .javascript .function {
   border-radius: 5px;
   box-sizing: border-box;
   background: var(--background-color);
-  box-shadow: 2px 2px 5px var(--shadow-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
 }
 .tagcloud-container:hover {
-  box-shadow: 2px 2px 8px var(--shadow-hover-color);
+  box-shadow: 0 15px 35px rgba(50,50,100,0.15), 0 5px 15px rgba(0,0,0,0.1) !important;
 }
 @media (max-width: 780px) {
   .tagcloud-container {

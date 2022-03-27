@@ -6,7 +6,7 @@
   <link href="http://lclfeng.github.io/atom.xml" rel="self"/>
   
   <link href="http://lclfeng.github.io/"/>
-  <updated>2016-07-31T11:09:33.973Z</updated>
+  <updated>2022-03-27T06:53:37.603Z</updated>
   <id>http://lclfeng.github.io/</id>
   
   <author>
@@ -17,41 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://lclfeng.github.io/2022/03/26/hello-world/"/>
-    <id>http://lclfeng.github.io/2022/03/26/hello-world/</id>
-    <published>2022-03-26T13:51:09.289Z</published>
-    <updated>2016-07-31T11:09:33.973Z</updated>
+    <title>Java 单例的线程安全、反射安全和反序列化安全概念</title>
+    <link href="http://lclfeng.github.io/2022/03/27/_Java%20%E5%8D%95%E4%BE%8B%E7%9A%84%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E3%80%81%E5%8F%8D%E5%B0%84%E5%AE%89%E5%85%A8%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%AE%89%E5%85%A8%E6%A6%82%E5%BF%B5/"/>
+    <id>http://lclfeng.github.io/2022/03/27/_Java%20%E5%8D%95%E4%BE%8B%E7%9A%84%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E3%80%81%E5%8F%8D%E5%B0%84%E5%AE%89%E5%85%A8%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%AE%89%E5%85%A8%E6%A6%82%E5%BF%B5/</id>
+    <published>2022-03-27T06:40:32.000Z</published>
+    <updated>2022-03-27T06:53:37.603Z</updated>
     
-    <content type="html"><![CDATA[<p>正如程序员写的第一个程序的输出往往都是“Hello World”一样，这篇博文亦是本博客的建站首文。</p><blockquote><p>此外，something interesting：由于第一次搭建好博客，对博客很陌生，因此，连发表文章都成了棘手的问题，因为之前都是在其他平台写博客，直接在网页就写，这次，完全全新的一个DIY博客，无从下手。因此，那天就在github上修改的博文，2333.后来在本地 hexo g -d 后，github上面的东西呗覆盖了，因此，找不到那天写的“第一篇”博文了</p></blockquote><h2 id="搭建博客的感想"><a href="#搭建博客的感想" class="headerlink" title="搭建博客的感想"></a><strong>搭建博客的感想</strong></h2><h3 id="1-我是新手"><a href="#1-我是新手" class="headerlink" title="1. 我是新手"></a><strong>1. 我是新手</strong></h3><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;这是第一次搭建个人博客。完全从零开始，就是借助搜索过来的教程来自己一步一步搭建。建立属于自己的网站（或者说博客吧）是自己很早之前的想法了，从大一开始吧，就是觉得拥有自己的网站很炫酷，很爽。之前在NYH同学的空间留言上看过她一个同学给她留言叫她帮建一个网站，然后NYH说虽然她读的网络工程但也不会……[扯远了]但由于大一什么都不懂，认知确实有限，但也有可能自己没有很上进地去学习怎么搭建吧，后来大二了，会了点东西，但是由于没有免费的域名，还要自己去买，最蛋疼的是还要每年续费，于是，本着建站来玩玩的心态的我并没有想在域名投入金钱。所以就没有弄。</p><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;直到2016-7-20号吧，自己打算学学github，于是就开始了github入门学习，学着学着，无意间在网上发现可以利用github pages来免费建站。正好自己会了点东西了。于是就搜索github建站的教程，挖槽，又意外发现hexo+github搭建博客超级简便+超级火。然后就搜教程来搭建了。我当时主要是参考这两篇博文来搭建的[感谢]：</p><blockquote><p><a class="link"   href="http://lijianchang.xyz/2016/03/16/%E5%B0%8F%E7%99%BD%E7%8B%AC%E7%AB%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2-Github-Pages%E5%92%8CHexo%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/#more" >小白独立搭建博客-Github-Pages和Hexo简明教程<i class="fas fa-external-link-alt"></i></a><br><a class="link"   href="http://blog.shijinrong.cn/2016/01/03/How-to-build-a-blog/" >如何使用10个小时搭建出个人域名而又Geek的独立博客？<i class="fas fa-external-link-alt"></i></a></p></blockquote><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;搭建的过程挺痛苦的，我并没有那么幸运和教程说的那样十个小时搭建好（更有甚者说，半个小时搭建好…）什么原因？？？因为中国特殊的国情吧，对外网的访问有点不可描述，导致我配置环境就搞了三四天而一点进展都没有，所幸，我还是依靠搜索引擎找到了解决方法。</p><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;于是，2016-7-24晚上接近十二点的时候，我的环境终于配置好，因为我担心第二天就又不行了（之前又一次配好了第二天就不行了，不知道是不是真的配好了），再加上配置好的激动心情，于是，决定熬夜搞！一直搞到凌晨5点，我第一次感觉到自己那么爱写代码！可能是满足了自己对新事物渴望的欲望罢了？！或者是自己对成功充满喜悦吧？！</p><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;我是在学校的宿舍弄的，南京这几天38℃高温，真是热炸了，睡觉基本是全身是汗，宿舍没空调，风扇吹不到。所以，写代码也是件不错的事情。</p><h3 id="2-第一篇博文"><a href="#2-第一篇博文" class="headerlink" title="2. 第一篇博文"></a><strong>2. 第一篇博文</strong></h3><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;搭建好博客的第一时间就是写篇博文，但发现不知道怎么写、怎么上传到github。于是就修改github的html，太TM天真了我。菜鸟的我哈哈哈哈哈………</p><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;博文的具体内容就是表达我的喜悦之情和对南京热炸天的温度的怨念（其实是宿舍没空调的愤怒）</p><h3 id="3-仍需努力"><a href="#3-仍需努力" class="headerlink" title="3. 仍需努力"></a><strong>3. 仍需努力</strong></h3><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;发现喜欢的事，就赶紧去做吧！没有多少时间留给你去磨磨唧唧！做不好是另外一回事。去做了又是另外一回事。</p><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;终于，网站建好了！<br>&amp;#160; &amp;#160; &amp;#160; &amp;#160;有句话说：<em>好腿玩一年</em>。<br>&amp;#160; &amp;#160; &amp;#160; &amp;#160;而我想说：<strong>这个博客我可以玩好几年。</strong></p><hr><p>感谢：</p><ul><li><a class="link"   href="https://github.com/" >GitHub<i class="fas fa-external-link-alt"></i></a>  </li><li><a class="link"   href="https://hexo.io/" >hexo<i class="fas fa-external-link-alt"></i></a>        </li><li><a class="link"   href="https://github.com/stiekel/hexo-theme-random" >hexo-theme-random<i class="fas fa-external-link-alt"></i></a>   </li><li><a class="link"   href="http://www.markdown.cn/" >markdown<i class="fas fa-external-link-alt"></i></a></li><li>百度(不放链接了。百毒一下，你就知道)</li></ul>]]></content>
+    <content type="html"><![CDATA[<p><strong>Java 单例的线程安全、反射安全和序列化安全概念：</strong></p><ul><li><strong>线程安全</strong>：指的是多个线程下，只有一个线程能够创建单例对象，且所有线程只能获取到同一个完整的单例对象</li><li><strong>反射安全</strong>：指的是无法利用反射机制去突破私有构造器，从而避免产生多个对象</li><li><strong>反序列化安全</strong>：指的是无法通过反序列化生成一个新的对象</li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;正如程序员写的第一个程序的输出往往都是“Hello World”一样，这篇博文亦是本博客的建站首文。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;此外，something interesting：由于第一次搭建好博客，对博客很陌生，因此，连发表文章都成了棘手的问题，因为之前都是</summary>
+    <summary type="html">&lt;p&gt;&lt;strong&gt;Java 单例的线程安全、反射安全和序列化安全概念：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;线程安全&lt;/strong&gt;：指的是多个线程下，只有一个线程能够创建单例对象，且所有线程只能获取到同一个完整的单例对象&lt;/li&gt;
+&lt;li&gt;&lt;str</summary>
       
     
     
     
     
-    <category term="hexo" scheme="http://lclfeng.github.io/tags/hexo/"/>
+    <category term="Java" scheme="http://lclfeng.github.io/tags/Java/"/>
     
-    <category term="水笔" scheme="http://lclfeng.github.io/tags/%E6%B0%B4%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>挖个坑</title>
-    <link href="http://lclfeng.github.io/2016/07/31/%E6%8C%96%E4%B8%AA%E5%9D%91/"/>
-    <id>http://lclfeng.github.io/2016/07/31/%E6%8C%96%E4%B8%AA%E5%9D%91/</id>
-    <published>2016-07-31T08:52:09.000Z</published>
-    <updated>2016-07-31T11:14:11.320Z</updated>
-    
-    
-    
-    
+    <category term="技术" scheme="http://lclfeng.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
