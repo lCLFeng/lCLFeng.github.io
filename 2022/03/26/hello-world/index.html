@@ -1,62 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh-Hans" color-mode="light">
-
-  <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="" />
-  <meta name="author" content="lCLFeng" />
-  <meta name="description" content="lCLFeng&#39;s blog" />
-  
-  
-  <title>
+<html lang="zh-Hans">
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="lCLFeng&#39;s blog">
+    <meta name="author" content="ClOONG">
     
-      Hello World 
-      
-      
-      |
+    <title>
+        
+            Hello World |
+        
+        ClOONG BlOG
+    </title>
     
-     lCLFeng
-  </title>
+<link rel="stylesheet" href="/css/style.css">
 
-  
-    <link rel="apple-touch-icon" href="/images/favicon.png">
-    <link rel="icon" href="/images/favicon.png">
-  
-
-  <!-- Raleway-Font -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
-  <!-- hexo site css -->
-  
-<link rel="stylesheet" href="/css/color-scheme.css">
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/iconfont/iconfont.css">
-<link rel="stylesheet" href="/css/github-markdown.css">
-<link rel="stylesheet" href="/css/highlight.css">
-<link rel="stylesheet" href="/css/comments.css">
-
-
-  <!-- jquery3.3.1 -->
-  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- fancybox -->
-  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
-  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
-  
-<script src="/js/fancybox.js"></script>
-
-
-  
-
-  <script>
-    var html = document.documentElement
-    const colorMode = localStorage.getItem('color-mode')
-    if (colorMode) {
-      document.documentElement.setAttribute('color-mode', colorMode)
-    }
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"lclfeng.github.io","root":"/","language":"zh-Hans","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#21005E","avatar":"/images/avatar.png","favicon":"/images/favicon.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"但 行 好 事 ， 莫 问 前 程"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
-
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
@@ -65,109 +32,204 @@
 </head>
 
 
-  <body>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="app">
-      <div class="header">
-  <div class="avatar">
-    <a href="/">
-      <!-- 头像取消懒加载，添加no-lazy -->
-      
-        <img src="/images/avatar.png" alt="">
-      
-    </a>
-    <div class="nickname"><a href="/">Oranges</a></div>
-  </div>
-  <div class="navbar">
-    <ul>
-      
-        <li class="nav-item" data-path="/">
-          <a href="/">Home</a>
-        </li>
-      
-        <li class="nav-item" data-path="/archives/">
-          <a href="/archives/">Archives</a>
-        </li>
-      
-        <li class="nav-item" data-path="/tags/">
-          <a href="/tags/">Tags</a>
-        </li>
-      
-        <li class="nav-item" data-path="/about/">
-          <a href="/about/">About</a>
-        </li>
-      
-    </ul>
-  </div>
+<body>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fas fa-circle-notch fa-spin"></i>
+        </span>
+    
 </div>
 
 
-<script src="/js/activeNav.js"></script>
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                ClOONG BlOG
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
 
 
+        </div>
 
-      <div class="flex-container">
-        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
-<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+        <div class="page-main-content-middle">
 
-<!-- LaTex Display -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
+            <div class="main-content">
 
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
 
+        <div class="article-title">
+            <span class="title-hover-animation">Hello World</span>
+        </div>
 
-  
-
-  
-
-  
-
-  
-  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
-  <div class="container post-details" id="post-details">
-    <div class="post-content">
-      <div class="post-title">Hello World</div>
-      <div class="post-attach">
-        <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="Update time"></i>
-          2022-03-26 21:51:09
-        </span>
         
-              <span class="post-tags">
-                <i class="iconfont icon-tags" title="Tags"></i>
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.png">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">ClOONG</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-03-26 21:51:09</span>
+        <span class="mobile">2022-03-26 21:51</span>
+    </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
                 
-                <span class="span--tag">
-                  <a href="/tags/hexo/" title="hexo">
-                    <b>#</b> hexo
-                  </a>
-                </span>
+                    <li>
+                        <a href="/tags/hexo/">hexo</a>&nbsp;
+                    </li>
                 
-                <span class="span--tag">
-                  <a href="/tags/%E6%B0%B4%E7%AC%94/" title="水笔">
-                    <b>#</b> 水笔
-                  </a>
-                </span>
+                    <li>
+                        | <a href="/tags/%E6%B0%B4%E7%AC%94/">水笔</a>&nbsp;
+                    </li>
                 
-              </span>
-          
-      </div>
-      <div class="markdown-body">
-        <p>正如程序员写的第一个程序的输出往往都是“Hello World”一样，这篇博文亦是本博客的建站首文。</p>
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.2k Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>4 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p>正如程序员写的第一个程序的输出往往都是“Hello World”一样，这篇博文亦是本博客的建站首文。</p>
 <blockquote>
 <p>此外，something interesting：由于第一次搭建好博客，对博客很陌生，因此，连发表文章都成了棘手的问题，因为之前都是在其他平台写博客，直接在网页就写，这次，完全全新的一个DIY博客，无从下手。因此，那天就在github上修改的博文，2333.后来在本地 hexo g -d 后，github上面的东西呗覆盖了，因此，找不到那天写的“第一篇”博文了</p>
 </blockquote>
 <h2 id="搭建博客的感想"><a href="#搭建博客的感想" class="headerlink" title="搭建博客的感想"></a><strong>搭建博客的感想</strong></h2><h3 id="1-我是新手"><a href="#1-我是新手" class="headerlink" title="1. 我是新手"></a><strong>1. 我是新手</strong></h3><p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;这是第一次搭建个人博客。完全从零开始，就是借助搜索过来的教程来自己一步一步搭建。建立属于自己的网站（或者说博客吧）是自己很早之前的想法了，从大一开始吧，就是觉得拥有自己的网站很炫酷，很爽。之前在NYH同学的空间留言上看过她一个同学给她留言叫她帮建一个网站，然后NYH说虽然她读的网络工程但也不会……[扯远了]但由于大一什么都不懂，认知确实有限，但也有可能自己没有很上进地去学习怎么搭建吧，后来大二了，会了点东西，但是由于没有免费的域名，还要自己去买，最蛋疼的是还要每年续费，于是，本着建站来玩玩的心态的我并没有想在域名投入金钱。所以就没有弄。</p>
 <p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;直到2016-7-20号吧，自己打算学学github，于是就开始了github入门学习，学着学着，无意间在网上发现可以利用github pages来免费建站。正好自己会了点东西了。于是就搜索github建站的教程，挖槽，又意外发现hexo+github搭建博客超级简便+超级火。然后就搜教程来搭建了。我当时主要是参考这两篇博文来搭建的[感谢]：</p>
 <blockquote>
-<p><a target="_blank" rel="noopener" href="http://lijianchang.xyz/2016/03/16/%E5%B0%8F%E7%99%BD%E7%8B%AC%E7%AB%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2-Github-Pages%E5%92%8CHexo%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/#more">小白独立搭建博客-Github-Pages和Hexo简明教程</a><br><a target="_blank" rel="noopener" href="http://blog.shijinrong.cn/2016/01/03/How-to-build-a-blog/">如何使用10个小时搭建出个人域名而又Geek的独立博客？</a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="http://lijianchang.xyz/2016/03/16/%E5%B0%8F%E7%99%BD%E7%8B%AC%E7%AB%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2-Github-Pages%E5%92%8CHexo%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/#more" >小白独立搭建博客-Github-Pages和Hexo简明教程<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="http://blog.shijinrong.cn/2016/01/03/How-to-build-a-blog/" >如何使用10个小时搭建出个人域名而又Geek的独立博客？<i class="fas fa-external-link-alt"></i></a></p>
 </blockquote>
 <p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;搭建的过程挺痛苦的，我并没有那么幸运和教程说的那样十个小时搭建好（更有甚者说，半个小时搭建好…）什么原因？？？因为中国特殊的国情吧，对外网的访问有点不可描述，导致我配置环境就搞了三四天而一点进展都没有，所幸，我还是依靠搜索引擎找到了解决方法。</p>
 <p>&amp;#160; &amp;#160; &amp;#160; &amp;#160;于是，2016-7-24晚上接近十二点的时候，我的环境终于配置好，因为我担心第二天就又不行了（之前又一次配好了第二天就不行了，不知道是不是真的配好了），再加上配置好的激动心情，于是，决定熬夜搞！一直搞到凌晨5点，我第一次感觉到自己那么爱写代码！可能是满足了自己对新事物渴望的欲望罢了？！或者是自己对成功充满喜悦吧？！</p>
@@ -179,363 +241,283 @@ MathJax = {
 <hr>
 <p>感谢：</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>  </li>
-<li><a target="_blank" rel="noopener" href="https://hexo.io/">hexo</a>        </li>
-<li><a target="_blank" rel="noopener" href="https://github.com/stiekel/hexo-theme-random">hexo-theme-random</a>   </li>
-<li><a target="_blank" rel="noopener" href="http://www.markdown.cn/">markdown</a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/" >GitHub<i class="fas fa-external-link-alt"></i></a>  </li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >hexo<i class="fas fa-external-link-alt"></i></a>        </li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/stiekel/hexo-theme-random" >hexo-theme-random<i class="fas fa-external-link-alt"></i></a>   </li>
+<li><a class="link"   target="_blank" rel="noopener" href="http://www.markdown.cn/" >markdown<i class="fas fa-external-link-alt"></i></a></li>
 <li>百度(不放链接了。百毒一下，你就知道)</li>
 </ul>
 
-      </div>
-      
-        <div class="prev-or-next">
-          <div class="post-foot-next">
-            
-              <a href="/2016/07/31/%E6%8C%96%E4%B8%AA%E5%9D%91/" target="_self">
-                <i class="iconfont icon-chevronleft"></i>
-                <span>Prev</span>
-              </a>
-            
-          </div>
-          <div class="post-attach">
-            <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="Update time"></i>
-              2022-03-26 21:51:09
-            </span>
-            
-                  <span class="post-tags">
-                    <i class="iconfont icon-tags" title="Tags"></i>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/hexo/" title="hexo">
-                        <b>#</b> hexo
-                      </a>
-                    </span>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/%E6%B0%B4%E7%AC%94/" title="水笔">
-                        <b>#</b> 水笔
-                      </a>
-                    </span>
-                    
-                  </span>
-              
-          </div>
-          <div class="post-foot-prev">
-            
-          </div>
         </div>
-      
-    </div>
-    
-  <div id="btn-catalog" class="btn-catalog">
-    <i class="iconfont icon-catalog"></i>
-  </div>
-  <div class="post-catalog hidden" id="catalog">
-    <div class="title">Contents</div>
-    <div class="catalog-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%84%9F%E6%83%B3"><span class="toc-text">搭建博客的感想</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%88%91%E6%98%AF%E6%96%B0%E6%89%8B"><span class="toc-text">1. 我是新手</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87"><span class="toc-text">2. 第一篇博文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BB%8D%E9%9C%80%E5%8A%AA%E5%8A%9B"><span class="toc-text">3. 仍需努力</span></a></li></ol></li></ol>
-    </div>
-  </div>
-
-  
-<script src="/js/catalog.js"></script>
-
-
-
-
-    
-      <div class="comments-container">
-        
-
-
-
-
-
-
-
-      </div>
-    
-  </div>
-
 
         
-<div class="footer">
-  <div class="social">
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
     <ul>
-      
+        <li>Post title：Hello World</li>
+        <li>Post author：ClOONG</li>
+        <li>Create time：2022-03-26 21:51:09</li>
         <li>
-          <a title="github" target="_blank" rel="noopener" href="https://github.com/lclfeng">
-            <i class="iconfont icon-github"></i>
-          </a>
+            Post link：https://lclfeng.github.io/2022/03/26/hello-world/
         </li>
-      
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
     </ul>
-  </div>
-  
-    
-    <div class="footer-more">
-      
-        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © 2022 lClfeng</a>
-        
-    </div>
-  
-    
-    <div class="footer-more">
-      
-        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
-        
-    </div>
-  
 </div>
 
-      </div>
+            </div>
+        
 
-      <div class="tools-bar">
-        <div class="back-to-top tools-bar-item hidden">
-  <a href="javascript: void(0)">
-    <i class="iconfont icon-chevronup"></i>
-  </a>
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/hexo/">#hexo</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E6%B0%B4%E7%AC%94/">#水笔</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2016/07/31/%E6%8C%96%E4%B8%AA%E5%9D%91/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">挖个坑</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
 </div>
 
 
-<script src="/js/backtotop.js"></script>
+                
+            </div>
 
+        </div>
 
-
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2016</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">ClOONG</a>
+        </div>
         
-  <div class="search-icon tools-bar-item" id="search-icon">
-    <a href="javascript: void(0)">
-      <i class="iconfont icon-search"></i>
-    </a>
-  </div>
-
-  <div class="search-overlay hidden">
-    <div class="search-content" tabindex="0">
-      <div class="search-title">
-        <span class="search-icon-input">
-          <a href="javascript: void(0)">
-            <i class="iconfont icon-search"></i>
-          </a>
-        </span>
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
         
-          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
         
-        <span class="search-close-icon" id="search-close-icon">
-          <a href="javascript: void(0)">
-            <i class="iconfont icon-close"></i>
-          </a>
-        </span>
-      </div>
-      <div class="search-result" id="search-result"></div>
+        
     </div>
-  </div>
+</footer>
 
-  <script type="text/javascript">
-    var inputArea = document.querySelector("#search-input")
-    var searchOverlayArea = document.querySelector(".search-overlay")
-
-    inputArea.onclick = function() {
-      getSearchFile()
-      this.onclick = null
-    }
-
-    inputArea.onkeydown = function() {
-      if(event.keyCode == 13)
-        return false
-    }
-
-    function openOrHideSearchContent() {
-      let isHidden = searchOverlayArea.classList.contains('hidden')
-      if (isHidden) {
-        searchOverlayArea.classList.remove('hidden')
-        document.body.classList.add('hidden')
-        // inputArea.focus()
-      } else {
-        searchOverlayArea.classList.add('hidden')
-        document.body.classList.remove('hidden')
-      }
-    }
-
-    function blurSearchContent(e) {
-      if (e.target === searchOverlayArea) {
-        openOrHideSearchContent()
-      }
-    }
-
-    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
-    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
-    searchOverlayArea.addEventListener("click", blurSearchContent, false)
-
-    var searchFunc = function (path, search_id, content_id) {
-      'use strict';
-      var $input = document.getElementById(search_id);
-      var $resultContent = document.getElementById(content_id);
-      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
-      $.ajax({
-        // 0x01. load xml file
-        url: path,
-        dataType: "xml",
-        success: function (xmlResponse) {
-          // 0x02. parse xml file
-          var datas = $("entry", xmlResponse).map(function () {
-            return {
-              title: $("title", this).text(),
-              content: $("content", this).text(),
-              url: $("url", this).text()
-            };
-          }).get();
-          $resultContent.innerHTML = "";
-
-          $input.addEventListener('input', function () {
-            // 0x03. parse query to keywords list
-            var str = '<ul class=\"search-result-list\">';
-            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-            $resultContent.innerHTML = "";
-            if (this.value.trim().length <= 0) {
-              return;
-            }
-            // 0x04. perform local searching
-            datas.forEach(function (data) {
-              var isMatch = true;
-              var content_index = [];
-              if (!data.title || data.title.trim() === '') {
-                data.title = "Untitled";
-              }
-              var orig_data_title = data.title.trim();
-              var data_title = orig_data_title.toLowerCase();
-              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
-              var data_content = orig_data_content.toLowerCase();
-              var data_url = data.url;
-              var index_title = -1;
-              var index_content = -1;
-              var first_occur = -1;
-              // only match artiles with not empty contents
-              if (data_content !== '') {
-                keywords.forEach(function (keyword, i) {
-                  index_title = data_title.indexOf(keyword);
-                  index_content = data_content.indexOf(keyword);
-
-                  if (index_title < 0 && index_content < 0) {
-                    isMatch = false;
-                  } else {
-                    if (index_content < 0) {
-                      index_content = 0;
-                    }
-                    if (i == 0) {
-                      first_occur = index_content;
-                    }
-                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
-                  }
-                });
-              } else {
-                isMatch = false;
-              }
-              // 0x05. show search results
-              if (isMatch) {
-                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
-                var content = orig_data_content;
-                if (first_occur >= 0) {
-                  // cut out 100 characters
-                  var start = first_occur - 20;
-                  var end = first_occur + 80;
-
-                  if (start < 0) {
-                    start = 0;
-                  }
-
-                  if (start == 0) {
-                    end = 100;
-                  }
-
-                  if (end > content.length) {
-                    end = content.length;
-                  }
-
-                  var match_content = content.substr(start, end);
-
-                  // highlight all keywords
-                  keywords.forEach(function (keyword) {
-                    var regS = new RegExp(keyword, "gi");
-                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
-                  });
-
-                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
-                }
-                str += "</li>";
-              }
-            });
-            str += "</ul>";
-            if (str.indexOf('<li>') === -1) {
-              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
-            }
-            $resultContent.innerHTML = str;
-          });
-        },
-        error: function(xhr, status, error) {
-          $resultContent.innerHTML = ""
-          if (xhr.status === 404) {
-            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
-          } else {
-            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
-          }
-        }
-      });
-      $(document).on('click', '#search-close-icon', function() {
-        $('#search-input').val('');
-        $('#search-result').html('');
-      });
-    }
-
-    var getSearchFile = function() {
-        var path = "/search.xml";
-        searchFunc(path, 'search-input', 'search-result');
-    }
-  </script>
-
-
-
-
-        
-  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
-    <a href="javascript: void(0)">
-      <i id="theme-icon" class="iconfont icon-moon"></i>
-    </a>
-  </div>
-
-  
-<script src="/js/colorscheme.js"></script>
-
-
-
-
-
-        
-  
-    <div class="share-icon tools-bar-item">
-      <a href="javascript: void(0)" id="share-icon">
-        <i class="iconfont iconshare"></i>
-      </a>
-      <div class="share-content hidden">
-        
-          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + Hello%20World + '&url=' + http%3A%2F%2Flclfeng.github.io%2F2022%2F03%2F26%2Fhello-world%2F + '" target="_blank" title="Twitter">
-            <i class="iconfont icon-twitter"></i>
-          </a>
-        
-        
-          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://lclfeng.github.io/2022/03/26/hello-world/" target="_blank" title="Facebook">
-            <i class="iconfont icon-facebooksquare"></i>
-          </a>
-        
-      </div>
+        </div>
     </div>
-  
-  
-<script src="/js/shares.js"></script>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%84%9F%E6%83%B3"><span class="nav-number">1.</span> <span class="nav-text">搭建博客的感想</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%88%91%E6%98%AF%E6%96%B0%E6%89%8B"><span class="nav-number">1.1.</span> <span class="nav-text">1. 我是新手</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87"><span class="nav-number">1.2.</span> <span class="nav-text">2. 第一篇博文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%BB%8D%E9%9C%80%E5%8A%AA%E5%8A%9B"><span class="nav-number">1.3.</span> <span class="nav-text">3. 仍需努力</span></a></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
 
 
 
-      </div>
-    </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-  </body>
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/dark-light-toggle.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/local-search.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/code-copy.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/lazyload.js"></script>
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/toc.js"></script>
+    
+</div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+
+</body>
 </html>
