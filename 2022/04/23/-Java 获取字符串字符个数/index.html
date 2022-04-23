@@ -9,7 +9,7 @@
     
     <title>
         
-            Archive: 2016 |
+            Java 获取字符串字符个数 |
         
         ClOONG BlOG
     </title>
@@ -77,7 +77,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/archives"
                             >
                                 ARCHIVES
@@ -127,7 +127,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/archives">ARCHIVES</a>
                 </li>
             
@@ -157,55 +157,147 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="archive-container ">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">Java 获取字符串字符个数</span>
+        </div>
+
         
-<div class="archive-list-container">
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.png">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">ClOONG</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-04-23 21:13:52</span>
+        <span class="mobile">2022-04-23 21:13</span>
+    </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[2]</span>
-            </div>
-            <ul class="article-list">
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/04/23/-Java%20%E8%8E%B7%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E7%AC%A6%E4%B8%AA%E6%95%B0/"
-                        >Java 获取字符串字符个数</a>
-                        <span class="article-date">04-23</span>
+                    <li>
+                        <a href="/tags/Java/">Java</a>&nbsp;
                     </li>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/03/27/-Java%20%E5%8D%95%E4%BE%8B%E7%9A%84%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E3%80%81%E5%8F%8D%E5%B0%84%E5%AE%89%E5%85%A8%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%AE%89%E5%85%A8%E6%A6%82%E5%BF%B5/"
-                        >Java 单例的线程安全、反射安全和反序列化安全概念</a>
-                        <span class="article-date">03-27</span>
+                    <li>
+                        | <a href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>&nbsp;
                     </li>
                 
             </ul>
-        </section>
+        </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2016</span>
-                <span class="archive-year-post-count">[1]</span>
-            </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2016/07/24/%E7%AC%AC%E4%B8%89%E7%AF%87/"
-                        >极限局部保号性的理解</a>
-                        <span class="article-date">07-24</span>
-                    </li>
-                
-            </ul>
-        </section>
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>333 Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p>Java Unicode</p>
+<p>基本字符的范围为：U+0000 ~ U+FFFF</p>
+<p>辅助字符的范围为：U+100000 ~ U+10FFFF</p>
+<p>这些映射字符的编号就称之为“Code Point”</p>
+<p>字节、码点和字符的关系</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://user-images.githubusercontent.com/19246968/164909934-1ad317c9-785f-4cf8-be32-3377c68dd30c.png"
+                      alt="关系图"
+                ></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> <span class="variable">supportCh</span> <span class="operator">=</span> <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line"><span class="comment">// char unSupportCh = &#x27;😊&#x27;;  // Too many characters in character literal</span></span><br><span class="line"><span class="type">String</span> <span class="variable">supportStr1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">supportStr2</span> <span class="operator">=</span> <span class="string">&quot;😊bc&quot;</span>;</span><br><span class="line"><span class="comment">// 打印字符串的第 0 个字符</span></span><br><span class="line">System.out.println(supportStr1.charAt(<span class="number">0</span>)); <span class="comment">// 输出:a</span></span><br><span class="line">System.out.println(supportStr2.charAt(<span class="number">0</span>)); <span class="comment">// 输出乱码:?</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印字符串的长度</span></span><br><span class="line">System.out.println(supportStr1.length()); <span class="comment">// 输出:3</span></span><br><span class="line">System.out.println(supportStr2.length()); <span class="comment">// 输出:4</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印字符串的字符数，codePointCount 方法获取码点，一个字符是一个码点。辅助字符占两个码点</span></span><br><span class="line">System.out.println(supportStr1.codePointCount(<span class="number">0</span>, supportStr1.length())); <span class="comment">// 输出:3</span></span><br><span class="line">System.out.println(supportStr2.codePointCount(<span class="number">0</span>, supportStr2.length())); <span class="comment">// 输出:3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印所有的码点</span></span><br><span class="line">System.out.println(Arrays.toString(supportStr1.codePoints().toArray())); <span class="comment">// 输出:[97, 98, 99]</span></span><br><span class="line">System.out.println(Arrays.toString(supportStr2.codePoints().toArray())); <span class="comment">// 输出:[128522, 98, 99]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 判断指定的 Unicode 码点是佛为辅助字符</span></span><br><span class="line">System.out.println(Character.isSupplementaryCodePoint(<span class="number">97</span>)); <span class="comment">// false</span></span><br><span class="line">System.out.println(Character.isSupplementaryCodePoint(<span class="number">128522</span>)); <span class="comment">// true (128522 为 😊 的码点)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 判断 char 是否为辅助码点</span></span><br><span class="line">System.out.println(Character.isSurrogate(supportStr2.charAt(<span class="number">0</span>))); <span class="comment">// true charAt(0) 为 😊 的第一个码点单元</span></span><br><span class="line">System.out.println(Character.isSurrogate(supportStr2.charAt(<span class="number">1</span>))); <span class="comment">// true charAt(1) 为 😊 的第二个码点单元</span></span><br><span class="line">System.out.println(Character.isSurrogate(supportStr2.charAt(<span class="number">3</span>))); <span class="comment">// false charAt(3) 为字符 b</span></span><br></pre></td></tr></table></figure>
+
+<p>拓展阅读：<a class="link"   target="_blank" rel="noopener" href="https://blog.boileryao.com/2018/11/java-encoding-and-whats-codepoint/" >Java 的字符编解码及CodePoint · 奔跑的锅炉 (boileryao.com)<i class="fas fa-external-link-alt"></i></a></p>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：Java 获取字符串字符个数</li>
+        <li>Post author：ClOONG</li>
+        <li>Create time：2022-04-23 21:13:52</li>
+        <li>
+            Post link：https://lclfeng.github.io/2022/04/23/-Java 获取字符串字符个数/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/Java/">#Java</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/03/27/-Java%20%E5%8D%95%E4%BE%8B%E7%9A%84%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E3%80%81%E5%8F%8D%E5%B0%84%E5%AE%89%E5%85%A8%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%AE%89%E5%85%A8%E6%A6%82%E5%BF%B5/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Java 单例的线程安全、反射安全和反序列化安全概念</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
     </div>
 </div>
+
 
                 
             </div>
@@ -249,6 +341,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -295,6 +404,14 @@
 
     </div>
 
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        
+    </div>
+</div>
+        </aside>
     
 
     <div class="image-viewer-container">
@@ -352,6 +469,8 @@
 
 
 <div class="post-scripts pjax">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.5/source/js/toc.js"></script>
     
 </div>
 

@@ -2585,6 +2585,11 @@ pre .javascript .function {
   border-bottom: 1px solid var(--border-color);
   color: var(--default-text-color);
 }
+.article-content-container .donate-coffee {
+  height: 100px;
+  width: 200px;
+  background-color: #000;
+}
 .article-content-container .post-tags-box {
   display: none;
   margin-top: 1.6rem;

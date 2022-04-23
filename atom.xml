@@ -6,7 +6,7 @@
   <link href="http://lclfeng.github.io/atom.xml" rel="self"/>
   
   <link href="http://lclfeng.github.io/"/>
-  <updated>2022-03-27T06:53:37.603Z</updated>
+  <updated>2022-04-23T14:34:41.137Z</updated>
   <id>http://lclfeng.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 获取字符串字符个数</title>
+    <link href="http://lclfeng.github.io/2022/04/23/-Java%20%E8%8E%B7%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E7%AC%A6%E4%B8%AA%E6%95%B0/"/>
+    <id>http://lclfeng.github.io/2022/04/23/-Java%20%E8%8E%B7%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E7%AC%A6%E4%B8%AA%E6%95%B0/</id>
+    <published>2022-04-23T13:13:52.000Z</published>
+    <updated>2022-04-23T14:34:41.137Z</updated>
+    
+    <content type="html"><![CDATA[<p>Java Unicode</p><p>基本字符的范围为：U+0000 ~ U+FFFF</p><p>辅助字符的范围为：U+100000 ~ U+10FFFF</p><p>这些映射字符的编号就称之为“Code Point”</p><p>字节、码点和字符的关系</p><p><img                       lazyload                     src="/images/loading.svg"                     data-src="https://user-images.githubusercontent.com/19246968/164909934-1ad317c9-785f-4cf8-be32-3377c68dd30c.png"                      alt="关系图"                ></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> <span class="variable">supportCh</span> <span class="operator">=</span> <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line"><span class="comment">// char unSupportCh = &#x27;😊&#x27;;  // Too many characters in character literal</span></span><br><span class="line"><span class="type">String</span> <span class="variable">supportStr1</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">supportStr2</span> <span class="operator">=</span> <span class="string">&quot;😊bc&quot;</span>;</span><br><span class="line"><span class="comment">// 打印字符串的第 0 个字符</span></span><br><span class="line">System.out.println(supportStr1.charAt(<span class="number">0</span>)); <span class="comment">// 输出:a</span></span><br><span class="line">System.out.println(supportStr2.charAt(<span class="number">0</span>)); <span class="comment">// 输出乱码:?</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印字符串的长度</span></span><br><span class="line">System.out.println(supportStr1.length()); <span class="comment">// 输出:3</span></span><br><span class="line">System.out.println(supportStr2.length()); <span class="comment">// 输出:4</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印字符串的字符数，codePointCount 方法获取码点，一个字符是一个码点。辅助字符占两个码点</span></span><br><span class="line">System.out.println(supportStr1.codePointCount(<span class="number">0</span>, supportStr1.length())); <span class="comment">// 输出:3</span></span><br><span class="line">System.out.println(supportStr2.codePointCount(<span class="number">0</span>, supportStr2.length())); <span class="comment">// 输出:3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印所有的码点</span></span><br><span class="line">System.out.println(Arrays.toString(supportStr1.codePoints().toArray())); <span class="comment">// 输出:[97, 98, 99]</span></span><br><span class="line">System.out.println(Arrays.toString(supportStr2.codePoints().toArray())); <span class="comment">// 输出:[128522, 98, 99]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 判断指定的 Unicode 码点是佛为辅助字符</span></span><br><span class="line">System.out.println(Character.isSupplementaryCodePoint(<span class="number">97</span>)); <span class="comment">// false</span></span><br><span class="line">System.out.println(Character.isSupplementaryCodePoint(<span class="number">128522</span>)); <span class="comment">// true (128522 为 😊 的码点)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 判断 char 是否为辅助码点</span></span><br><span class="line">System.out.println(Character.isSurrogate(supportStr2.charAt(<span class="number">0</span>))); <span class="comment">// true charAt(0) 为 😊 的第一个码点单元</span></span><br><span class="line">System.out.println(Character.isSurrogate(supportStr2.charAt(<span class="number">1</span>))); <span class="comment">// true charAt(1) 为 😊 的第二个码点单元</span></span><br><span class="line">System.out.println(Character.isSurrogate(supportStr2.charAt(<span class="number">3</span>))); <span class="comment">// false charAt(3) 为字符 b</span></span><br></pre></td></tr></table></figure><p>拓展阅读：<a class="link"   href="https://blog.boileryao.com/2018/11/java-encoding-and-whats-codepoint/" >Java 的字符编解码及CodePoint · 奔跑的锅炉 (boileryao.com)<i class="fas fa-external-link-alt"></i></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Java Unicode&lt;/p&gt;
+&lt;p&gt;基本字符的范围为：U+0000 ~ U+FFFF&lt;/p&gt;
+&lt;p&gt;辅助字符的范围为：U+100000 ~ U+10FFFF&lt;/p&gt;
+&lt;p&gt;这些映射字符的编号就称之为“Code Point”&lt;/p&gt;
+&lt;p&gt;字节、码点和字符的关系&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="Java" scheme="http://lclfeng.github.io/tags/Java/"/>
+    
+    <category term="技术" scheme="http://lclfeng.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Java 单例的线程安全、反射安全和反序列化安全概念</title>
